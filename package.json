@@ -12,8 +12,6 @@
   "dependencies": {
     "@types/aws-sdk": "^2.7.0",
     "aws-sdk": "^2.609.0",
-    "json-to-markdown-table": "^1.0.0",
-    "json2md": "^1.6.5",
     "markdown-table": "^2.0.0"
   }
 }

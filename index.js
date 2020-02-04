@@ -7,7 +7,7 @@ ec2.describeSecurityGroups({}, (err, data) => {
   if (err) return console.log(err);
   const securityGroups = new Map();
 
-  for (sg of data.SecurityGroups) securityGroups.set(sg.GroupId, sg.GroupName);
+  for (const sg of data.SecurityGroups) securityGroups.set(sg.GroupId, sg.GroupName);
 
   for (const sg of data.SecurityGroups) {
     const markdownRows = [];
